@@ -11,4 +11,11 @@ A patient first selects a Hospital and a doctor and makes an appointment. The ap
 There is a doctor profile which shows the profile for doctors.
 A blood bank finder.
 
-We Developed this app in **24 hours **, which was the time limit for the Hackathon.
+We Developed this app in **24 hours**, which was the time limit for the Hackathon.
+Our team was of 6 people
+Amit Kumar
+Jay Malnika
+Rushit Desai
+Abhi Jain
+Satyam Bajaj
+Ruchi Hinger
