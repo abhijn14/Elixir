@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rd.rushit.elixir.signup"
+    android:background="@color/background">
+
+    <ProgressBar
+        android:id="@+id/regi_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/title_src1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/sign_block"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/title_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign up"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:layout_margin="16dp"
+            android:textAllCaps="true"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:inputType="textCapWords"/>
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:inputType="textEmailAddress"/>
+
+        <EditText
+            android:id="@+id/userid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/user"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/dob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/dob"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:focusable="false"
+            android:clickable="true"/>
+
+        <EditText
+            android:id="@+id/blood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/blood"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:focusable="false"
+            android:clickable="true"/>
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/pass"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:inputType="textPassword"/>
+
+        <EditText
+            android:id="@+id/cnfpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/cnfpass"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:inputType="textPassword" />
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/gen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="@string/gender"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/gen_g"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/gen"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:id="@+id/female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:text="Female" />
+
+            </RadioGroup>
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/addr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/addr"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/phone"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:inputType="number"/>
+
+        <Button
+            android:id="@+id/signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

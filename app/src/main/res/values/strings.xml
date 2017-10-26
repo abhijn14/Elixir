@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Elixir</string>
+
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="app">Elixir</string>
+
+    //Bottom
+    <string name="title_home">Home</string>
+    <string name="title_doc">Doctor\nConsulted</string>
+    <string name="title_myacc">My\nAccount</string>
+    <string name="title_hospital">Hospitals\nNear Me</string>
+    <string name="title_stores">Medical Stores</string>
+    <string name="title_bloodbank">Blood Banks</string>
+    <string name="faq">FAQs</string>
+    <string name="search">Search</string>
+
+    //signup
+    <string name="name">Name</string>
+    <string name="dob">DOB</string>
+    <string name="gender">Gender:</string>
+    <string name="addr">Address</string>
+    <string name="email">Email ID</string>
+    <string name="phone">Mobile No.</string>
+    <string name="pass">Password</string>
+    <string name="cnfpass">Confirm Password</string>
+    <string name="blood">Blood Group</string>
+    <string name="user">User ID</string>
+
+
+    //Announcements
+
+    <string-array name="annoc">
+        <item>Widespread of Ebola all over Gujarat!! Thousand\'s admitted in the past two days</item>
+        <item>ZICA VIRUS enters India!!</item>
+        <item>Death toll due to Dengue rises to 1,00,000</item>
+        <item>Finally a full-proof cure for Ebola found...</item>
+        <item>Nations combine to find the cure for ZICA</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

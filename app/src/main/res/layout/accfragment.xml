@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/second_layout">
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="73dp"
+                    android:layout_height="78dp"
+                    app:srcCompat="@mipmap/pic_abcd"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rushit Desai"
+                    android:textSize="20dp"
+                    android:textColor="@color/color_Stroke"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_alignParentLeft="true"/>
+
+
+                <TextView
+                    android:id="@+id/mobile_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_Stroke"
+                    android:layout_below="@+id/name"
+                    android:text="+91 9429864553"
+                    android:textSize="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="40dp"/>
+            </RelativeLayout>
+            <View
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/second_layout"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/color_Stroke"></View>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/third_layout"
+                android:layout_below="@+id/line">
+                <TextView
+                    android:id="@+id/dob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D.O.B:"
+                    android:textColor="@color/color_Stroke"
+                    android:textSize="20dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="16dp"/>
+
+                <TextView
+                    android:id="@+id/dob_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="04/01/1997"
+                    android:textColor="@color/color_Stroke"
+                    android:textSize="20dp"
+                    android:layout_toRightOf="@+id/dob"
+                    android:layout_marginRight="30dp"
+                    android:layout_margin="16dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/blood_group"
+                    android:textColor="@color/color_Stroke"
+                    android:text="Blood Group:"
+                    android:layout_marginRight="30dp"
+                    android:layout_below="@+id/dob"
+                    android:layout_margin="16dp"
+                    android:textSize="20dp"
+                    android:layout_marginTop="4dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/blood_group_txt"
+                    android:textColor="@color/color_Stroke"
+                    android:text="AB+"
+                    android:layout_toRightOf="@+id/blood_group"
+                    android:layout_marginRight="30dp"
+                    android:layout_below="@+id/dob"
+                    android:layout_margin="16dp"
+                    android:textSize="20dp"
+                    android:layout_marginTop="4dp"/>
+
+                <View
+                    android:id="@+id/line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/blood_group"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/color_Stroke"></View>
+                <TextView
+                    android:id="@+id/general_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="General Info."
+                    android:textColor="@color/color_Stroke"
+                    android:layout_below="@+id/line2"
+                    android:layout_margin="16dp"
+                    android:textSize="20dp"/>
+
+                <Button
+                    android:id="@+id/view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/blood_group"
+                    android:text="View"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30dp"
+                    android:layout_alignBaseline="@+id/general_info"/>
+
+            </RelativeLayout>
+            <View
+                android:id="@+id/line3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/third_layout"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/color_Stroke"></View>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/fourth_layout"
+                android:layout_below="@+id/line3">
+                <TextView
+                    android:id="@+id/allergies"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Allergies : "
+                    android:textColor="@color/color_Stroke"
+                    android:textSize="20dp"
+                    android:layout_margin="16dp" />
+
+                <TextView
+                    android:id="@+id/allergies_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_Stroke"
+                    android:text="Allergic to Dust, Ethanol"
+                    android:textSize="20dp"
+                    android:layout_margin="16dp"
+                    android:layout_toRightOf="@+id/allergies"/>
+
+                <TextView
+                    android:id="@+id/deficiencies"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_Stroke"
+                    android:text="Deficiencies : "
+                    android:textSize="20dp"
+                    android:layout_below="@+id/allergies"
+                    android:layout_margin="16dp" />
+
+                <TextView
+                    android:id="@+id/deficiencies_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_Stroke"
+                    android:textSize="20dp"
+                    android:layout_margin="16dp"
+                    android:text="B12 , Iron"
+                    android:layout_toRightOf="@+id/deficiencies"
+                    android:layout_below="@+id/allergies"/>
+
+            </RelativeLayout>
+            <View
+                android:id="@+id/line4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/fourth_layout"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/color_Stroke"></View>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/fifth_layout"
+                android:layout_below="@+id/line4">
+                <TextView
+                    android:id="@+id/medical_records"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Medical Records : "
+                    android:textColor="@color/color_Stroke"
+                    android:textSize="20dp"
+                    android:layout_margin="16dp"
+                    android:clickable="true"/>
+
+                <Button
+                    android:id="@+id/view_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30dp"
+                    android:layout_alignBaseline="@+id/medical_records"/>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>
